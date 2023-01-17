@@ -1,6 +1,6 @@
 # ririsi Clone 2023 Update
 
-CSS got so much better!
+HTML & CSS are so much fun!
 
 <!-- README 파일의 확장자는 markdown인 md로 설정해줘야한다.
 markdown은 서식이 있는 문서를 작성하는거라 알고 있기!
