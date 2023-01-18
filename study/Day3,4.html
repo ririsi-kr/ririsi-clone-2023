@@ -1,0 +1,124 @@
+#2.5 #2.6
+<!-- HTML 문서의 형식의 규칙-->
+
+<!DOCTYPE html>
+<!-- 1. text 파일이 아닌 html 문서이다  -->
+<html lang="kr">
+  <!--우리 작업하는 사이트의 정보를 알려주는 것.
+    사용하는 언어가 무엇인지 검색엔진에 알려준다. -->
+
+  <head>
+    <!-- 2. 웹사이트 구조는 <head>와 <body>라는 두개의 파트로 구성 된다.
+    <head> : 웹사이트 환경을 설정한다. 외부적으로 보여지지 않은 설정
+            <head>태그 안에 있는 모든 태그들은 웹사이트에 보여지지 않은다.
+    <body> : 사용자가 볼 수 있는 content를 보여줌    -->
+
+    <link
+      rel="shortcut icon"
+      href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
+    />
+    <meta charset="UTF-8" />
+    <!-- charset는 브라우저에게 text를 어떻게 그려달라는지 말해준다.
+        charset 정보가 없으면 글자가 사이트에서 깨져 보일 수 있다.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="This is my website" />
+    <meta property="og:image" content="이미지 주소" />
+    <!-- "og:image"는 사이트를 공유할때 보여주는 이미지이다. -->
+    <!-- <meta>태그는 부가적인 정보를 뜻한다. -->
+    <title>Home Sweet Home</title>
+  </head>
+
+  <body>
+    <h1>ririsi Home</h1>
+    <h2><pre>ririsi hello</pre></h2>
+    <!-- 타자기 글자처럼 보여줌 -->
+    <cite>Lee Kyu Ri</cite>
+    <!-- 글자를 기울여서 보여줌 -->
+    <p><strong>I like to live in</strong> <mark>Seoul</mark></p>
+    <!-- <mark>는 하이라이트 마크를 해준다.
+        <strong>는 글씨 굵기를 굵게 해준다. -->
+  </body>
+</html>
+
+<!-- html,css,js를 검색할땐 "mdn"를 뒤에 붙이는 걸 추천한다.
+firefox에서 만든 web에 관한 정보들을 정리한 문서를 볼 수 있다.
+한국어 번역도 가능하다.
+
+*수 많은 html 태그를 외우지 말고 그때 그때 찾아서 사용할 것.
+*W3school은 절대 사용하지 말것  -->
+
+#2.8
+<!-- 태그와 속성(attribute)의 강력함에 대해 알아보자 -->
+
+<!-- <body></body> 태그에 속하는 form에는 버튼, 인풋 등이 있다 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <!-- input에는 다양한 유행이 존재한다. ex) color,password -->
+
+      <input required placeholder="name" type="text" />
+      <!-- required는 빈칸 입력을 요구한다.
+    form을 validation을 할 수 있다. (*validation: 검증)-->
+      <input placeholder="Last Name" disabled type="text" />
+      <input placeholder="Username" type="text" />
+      <input type="password" />
+      <input type="color" />
+      <!-- input은 하나 혹은 여러개의 type을 가질 수 있다. -->
+      <input type="submit" value="Create Account" />
+      <!-- submit는 버튼을 누르면 form을 어디론가 보내준다. 기본은 새로고침된다. -->
+    </form>
+
+    태그 형식
+    <tagname attrname="attrvalue">content</tagname>
+
+    <!-- <form>정보를 제출하기 위한 대화형 컨트롤을 포함하는 문서 구획을 나타냅니다. -->
+    <form>
+      <label for="LN">Last Name</label>
+      <input id="LN" required placeholder="name" type="text" />
+      <!-- <label>은 라벨을 누르면 연결된 input태그 창에 입력을 바로 할 수 있게 이동되는 태그이다.
+        *for과 input태그의 id가 동일해야 작동이 된다.  -->
+
+      <input placeholder="Last Name" type="text" />
+      <input placeholder="Username" type="date" />
+      <!-- date는 날짜 형식으로 입력하게 하는 type -->
+      <div><input type="password" /></div>
+      <div><input type="color" /></div>
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+
+    <!-- id는 body안에 어떤 태그에든 넣을 수 있는 attribute이다.
+      이유는, id는 unique identifier이기 때문이다.(고유식별자)
+    *element당 하나의 id만 가질 수다. id는 각각 고유의 값이다. 중복되면 안돼! id는 다른 태그에서 공유하면 안돼! id의 규칙이다. -->
+
+    <!-- #2.10
+    html 문서를 만들 때 이면에 있는 철학을 이야기해보자!
+    *어떤 태그에는 의미가 있지만 어떤 태그에는 의미가 없다.
+    *각 태그에 의미가 있는지 없는지 생각해보며 태그를 작성하자.-->
+
+    <!-- Non-semantic: 아무런 의미가 없는 태그부터 알아보자! -->
+    <div>안녕</div>
+    <div>나야</div>
+    <spna>안녕</spna>
+    <!-- <div>태그는 divison:분할, 구분, 경계선 을 뜻한다. 박스라고 생각해도 된다.박스 안에 들어간 내용은 서로 옆에 붙을 수 없다.
+    <div>태그는 의미론적으로 봤을때 document에는 아무런 값도 없는 box이다.-->
+
+    <!-- semantic : 의미를 가진 태그-->
+    <header>
+      <h1>The RIRISI Times</h1>
+    </header>
+    <main><p>Hello!</p></main>
+    <footer>&copy; 2023 R.S</footer>
+    <!-- <header>, <main>, <footer> 태그는 모두 <div>태그를 대체 할 수 있다. 그러나 모두 같은 div로 코드를 짜면 코드 자체를 이해하는 번거롭기 때문에 semantic으로 짜는 것이 좋다.
+      *document와 content를 명확하게 묘사 될 수 있도록 semantic으로 작성하자!* -->
+  </body>
+</html>

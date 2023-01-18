@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>D-7.css</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 20px;
+      }
+
+      div {
+        width: 150px;
+        height: 150px;
+        color: white;
+        background-color: wheat;
+      }
+      div:first-child {
+        background-color: pink;
+      }
+      div:last-child {
+        background-color: teal;
+      }
+
+      span {
+        background-color: tomato;
+      }
+      span:nth-child(even) {
+        background-color: teal;
+        /* even = 2n = 2n+1(홀수번째만 적용) */
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+  </body>
+</html>

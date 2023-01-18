@@ -1,0 +1,66 @@
+body {
+  height: 200vh;
+  margin: 20px;
+}
+
+#all {
+  width: 650px;
+  height: 1070px;
+  background-color: rgb(244, 240, 235);
+  padding: 200px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  left: 40%;
+  top: 40px;
+}
+
+div:nth-child(2) {
+  width: 300px;
+  height: 500px;
+  background-color: tomato;
+  border: 7px solid white;
+}
+
+.namebox {
+  width: 300px;
+  height: 140px;
+  background-color: white;
+  position: relative;
+}
+
+/* .fontbox {
+  position: absolute;
+  top: 50px;
+} */
+
+div:nth-child(3) {
+  width: 300px;
+  height: 500px;
+  background-color: teal;
+  border: 7px solid white;
+}
+
+div:nth-child(4) {
+  width: 300px;
+  height: 500px;
+  background-color: burlywood;
+  border: 7px solid white;
+}
+
+div:nth-child(5) {
+  width: 300px;
+  height: 500px;
+  background-color: thistle;
+  border: 7px solid white;
+}

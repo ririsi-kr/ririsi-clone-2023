@@ -1,0 +1,33 @@
+.status-bar {
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.stayus-bar__column {
+  width: 33%;
+}
+.stayus-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+.stayus-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.stayus-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.stayus-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}
