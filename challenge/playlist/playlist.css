@@ -1,0 +1,162 @@
+.playlist-box {
+  width: 360px;
+  height: 750px;
+  border: 5px solid RGB(0, 198, 172);
+}
+
+.top-box {
+  width: 360px;
+  height: 90px;
+  display: flex;
+  padding-top: 25px;
+}
+
+.top-box__in {
+  width: 33%;
+}
+
+.top-box__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-box__x {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fa-solid {
+  margin-left: 20px;
+  size: 20px;
+}
+
+.img-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+
+.img-box__nemo {
+  width: 115px;
+  height: 115px;
+  background-color: RGB(255, 188, 18);
+  margin-left: 25px;
+  border-radius: 17px;
+  border: 2px solid black;
+  position: relative;
+  display: inline-flex;
+}
+
+.fa-regular {
+  margin: auto;
+}
+
+.img-box__text {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  line-height: 18px;
+  margin-top: 40px;
+  margin-right: 70px;
+}
+
+.ran {
+  font-size: 33px;
+  font-weight: 900;
+}
+
+.mini_nemo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.playtext {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.button-box_icon {
+  height: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 20px;
+  border-bottom-width: 6.5px;
+}
+
+.fa-solid {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.button-box_roundicon {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  border-bottom-width: 6.5px;
+}
+
+.songlist-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 360px;
+  width: 360px;
+  /* border: 5px solid rgb(26, 190, 8); */
+  padding-top: 10px;
+}
+
+.songlist-box__outline {
+  height: 60px;
+  width: 360px;
+  /* border: 3px solid palevioletred; */
+  display: flex;
+  align-items: center;
+}
+.mini_nemo {
+  margin-left: 25px;
+  margin-right: 13px;
+}
+
+.song_text {
+  height: 50px;
+  /* border: 3px solid rgb(218, 153, 24); */
+  line-height: 20px;
+  margin-top: 13px;
+}
+
+.song_name {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.songlist-box__outline:first-child .mini_nemo {
+  background-color: RGB(248, 91, 42);
+}
+
+.songlist-box__outline:nth-child(2) .mini_nemo {
+  background-color: RGB(255, 137, 187);
+}
+
+.songlist-box__outline:nth-child(3) .mini_nemo {
+  background-color: RGB(25, 72, 228);
+}
+
+.songlist-box__outline:last-child .mini_nemo {
+  background-color: RGB(13, 190, 165);
+}

@@ -1,0 +1,66 @@
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wecolme-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+/* not은 "이 것을 제외한 나머지에 적용하고 싶어요" 라는 말이라서,
+  #login-form input 에도 똑같이 쓰면 중복적용됩니다.
+  not쪽에만 적어야해서 복사붙여넣기가 아닌 잘라내기로 가져오기! */
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+  color: rgb(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13 px;
+}
+
+/* #6.8
+  - 가상 클래스 선택자(pseudo element)
+  - :not()→ 뭔가가 적용되는 걸 원하지 않을 때 사용한다.
+  - [ ] 사이에 쓰인 것들은 특성 선택자(attribute selector)이다.
+  - cursor: pointer;로 버튼 위의 커서를 변경할 수 있다.
+  - color:inherit;는 부모로부터 색을 상속받는 것이다. */
