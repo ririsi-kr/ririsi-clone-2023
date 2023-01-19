@@ -11,14 +11,14 @@
   <body id="chat-screen">
     <div class="status-bar">
       <div class="stayus-bar__column">
-        <span>No Service</span>
+        <span>KR</span>
         <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="stayus-bar__column">
-        <span>18:32</span>
+        <span id="clockjs">00:00:00</span>
       </div>
       <div class="stayus-bar__column">
-        <span>110%</span>
+        <span>100%</span>
         <i class="fa-solid fa-battery-full fa-lg"></i>
         <!-- "lg"는 아이콘 사이즈를 키울때 쓰는 명령어이다. -->
         <i class="fa-solid fa-bolt"></i>
@@ -46,15 +46,15 @@
         <div class="message-row__content">
           <span class="message__author">Jeff</span>
           <div class="message__info">
-            <span class="message__bubble">Hi!</span>
-            <span class="message__time">21:25</span>
+            <span class="message__bubble">Let's go on a trip💙</span>
+            <span class="message__time">12:35</span>
           </div>
         </div>
       </div>
       <div class="message-row message-row--own">
         <div class="message-row__content">
           <div class="message__info">
-            <span class="message__bubble">Hi nice to meet you :)</span>
+            <span class="message__bubble">All right, let's go!</span>
             <span class="message__time">21:27</span>
           </div>
         </div>
@@ -77,6 +77,7 @@
       <span>Your screen is too big</span>
     </div>
 
+    <script src="./clockjs.js"></script>
     <script
       src="https://kit.fontawesome.com/222ab3ff8d.js"
       crossorigin="anonymous"

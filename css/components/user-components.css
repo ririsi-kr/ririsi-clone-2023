@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .user-component,
@@ -18,6 +19,7 @@
   font-weight: 600;
   font-size: 22px;
   margin-left: 18px;
+  padding-bottom: 7px;
 }
 
 .user-component__subtitle {

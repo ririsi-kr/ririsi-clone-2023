@@ -128,5 +128,9 @@
 
 .open-post__heart-count:hover i {
   will-change: transform;
+  /* will-chang는 브라우저에게 무언가 변경될 것이라고 이야기해주는 property이다.
+  이 기능을 사용하면 animation을 좀 더 낫게(더 부드럽게 작동되도록) 만들 수 있다.
+  일종의 브라우저를 돕는 기능이다.
+  예를들어, 지금과 같이 하트의 사이즈가 작을때 흘들리는 것을 안정적으로 움직이게 할 수 있다.*/
   animation: heartBeat 1s linear infinite;
 }

@@ -8,17 +8,17 @@
     <title>Find - ririsi Talk</title>
   </head>
 
-  <body>
+  <body background="img/bg.jpeg">
     <div class="status-bar">
       <div class="stayus-bar__column">
         <span>No Service</span>
         <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="stayus-bar__column">
-        <span>18:32</span>
+        <span id="clockjs">00:00:00</span>
       </div>
       <div class="stayus-bar__column">
-        <span>110%</span>
+        <span>100%</span>
         <i class="fa-solid fa-battery-full fa-lg"></i>
         <!-- "lg"는 아이콘 사이즈를 키울때 쓰는 명령어이다. -->
         <i class="fa-solid fa-bolt"></i>
@@ -85,7 +85,7 @@
         <div class="open-post">
           <div class="open-post__column">
             <h5 class="open-post__title">#NewJeans</h5>
-            <h6 class="open-post__hashtags">#NewJeans#hypeboy#attention</h6>
+            <h6 class="open-post__hashtags">#NewJeans#hypeboy#girls</h6>
 
             <div class="open-post__members">
               <img src="img/4.jpeg" />
@@ -160,6 +160,7 @@
       <span>Your screen is too big</span>
     </div>
 
+    <script src="./clockjs.js"></script>
     <script
       src="https://kit.fontawesome.com/222ab3ff8d.js"
       crossorigin="anonymous"

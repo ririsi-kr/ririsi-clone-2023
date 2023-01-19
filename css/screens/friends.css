@@ -1,7 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@400;600&display=swap");
+
+body {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.screen-header__title {
+  color: white;
+  font-family: "Bree Serif", serif;
+}
 #friends-display-link {
   text-align: center;
   display: block;
-  background-color: #faf4d1;
+  background-color: #faf8ee;
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 25px;
@@ -9,7 +21,7 @@
 }
 
 #friends-display-link i {
-  color: rgba(0, 0, 0, 0.3);
+  color: #ff7770;
 }
 
 .friends-screen {
@@ -19,14 +31,16 @@
 .friends-screen__channel {
   margin-top: 25px;
   border-top: var(--main-border);
+  border-bottom: var(--main-border);
   padding-top: 15px;
+  margin-bottom: 30px;
 }
 
 .friends-screen__channel-header {
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 @keyframes hideSplashScreen {
@@ -40,7 +54,7 @@
 }
 
 #splash-screen {
-  background-color: rgb(241, 160, 173);
+  background-color: peachpuff;
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -50,5 +64,11 @@
   align-items: center;
   font-size: 120px;
   animation: hideSplashScreen 0.3s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 0.7s;
+}
+
+.front {
+  font-size: 50px;
+  color: white;
+  font-family: "Bree Serif", serif;
 }

@@ -8,17 +8,17 @@
     <title>Chats - ririsi Talk</title>
   </head>
 
-  <body>
+  <body background="img/bg.jpeg">
     <div class="status-bar">
       <div class="stayus-bar__column">
-        <span>No Service</span>
+        <span>KR</span>
         <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="stayus-bar__column">
-        <span>18:32</span>
+        <span id="clockjs">00:00:00</span>
       </div>
       <div class="stayus-bar__column">
-        <span>110%</span>
+        <span>100%</span>
         <i class="fa-solid fa-battery-full fa-lg"></i>
         <!-- "lg"는 아이콘 사이즈를 키울때 쓰는 명령어이다. -->
         <i class="fa-solid fa-bolt"></i>
@@ -40,17 +40,145 @@
         <div class="user-component">
           <div class="user-component__column">
             <img
+              src="./img/channel.jpeg"
+              class="user-component__avatar user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">@i.ririsi</h4>
+              <h6 class="user-component__subtitle">Love is in the air💖</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">09:32</span>
+            <div class="badge">3</div>
+          </div>
+        </div>
+      </a>
+    </main>
+
+    <main class="main-screen">
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="./img/jeff.png"
+              class="user-component__avatar user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">@Jeff</h4>
+              <h6 class="user-component__subtitle">Let's go on a trip💙</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">12:35</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+    </main>
+
+    <main class="main-screen">
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
               src="./img/1-1.jpeg"
               class="user-component__avatar user-component__avatar"
             />
             <div class="user-component__text">
-              <h4 class="user-component__title">ririsi</h4>
+              <h4 class="user-component__title">@MinJi</h4>
+              <h6 class="user-component__subtitle">That makes two of us.</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">13:32</span>
+            <div class="badge">2</div>
+          </div>
+        </div>
+      </a>
+    </main>
+
+    <main class="main-screen">
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="./img/2.jpeg"
+              class="user-component__avatar user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">@Hanni</h4>
+              <h6 class="user-component__subtitle">Ditto!</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">15:07</span>
+            <div class="badge">2</div>
+          </div>
+        </div>
+      </a>
+    </main>
+
+    <main class="main-screen">
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="./img/3.jpeg"
+              class="user-component__avatar user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">@Haerin</h4>
+              <h6 class="user-component__subtitle">
+                Do you want to walk together?
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">17:22</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+    </main>
+
+    <main class="main-screen">
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="./img/4.jpeg"
+              class="user-component__avatar user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">@Hyein</h4>
+              <h6 class="user-component__subtitle">Let's go get some soda!</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">18:52</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+    </main>
+
+    <main class="main-screen">
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="./img/5.jpeg"
+              class="user-component__avatar user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">MinJi</h4>
               <h6 class="user-component__subtitle">Love is in the Air</h6>
             </div>
           </div>
           <div class="user-component__column">
             <span class="user-component__time">15:32</span>
-            <div class="badge">3</div>
+            <div class="badge">1</div>
           </div>
         </div>
       </a>
@@ -88,6 +216,7 @@
     <div id="no-mobile">
       <span>Your screen is too big</span>
     </div>
+    <script src="./clockjs.js"></script>
     <script
       src="https://kit.fontawesome.com/222ab3ff8d.js"
       crossorigin="anonymous"

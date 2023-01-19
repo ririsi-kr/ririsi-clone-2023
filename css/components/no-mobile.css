@@ -2,13 +2,17 @@
   position: absolute;
   z-index: 99;
   height: 100vh;
-  background-color: var(--yellow);
+  background-color: #f59b96;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 32px;
   top: 0;
+}
+
+#no-mobile span {
+  color: white;
 }
 
 @media screen and (max-width: 645px) {

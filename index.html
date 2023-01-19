@@ -5,20 +5,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoa Talk</title>
+    <title>Welcome to ririsi Talk</title>
   </head>
 
   <body>
     <div class="status-bar">
       <div class="stayus-bar__column">
-        <span>No Service</span>
+        <span>KT</span>
         <i class="fa-solid fa-wifi"></i>
       </div>
-      <div class="stayus-bar__column">
-        <span>18:32</span>
+      <div class="stayus-bar__column js-clock">
+        <span id="clockjs">00:00:00</span>
       </div>
       <div class="stayus-bar__column">
-        <span>110%</span>
+        <span>100%</span>
         <i class="fa-solid fa-battery-full fa-lg"></i>
         <!-- "lg"는 아이콘 사이즈를 키울때 쓰는 명령어이다. -->
         <i class="fa-solid fa-bolt"></i>
@@ -26,7 +26,7 @@
     </div>
 
     <header class="welcome-header">
-      <h1 class="wecolme-header__title">Welcome to kokoa Clone</h1>
+      <h1 class="wecolme-header__title">Welcome to ririsi Clone</h1>
       <p class="welcome-header__text">
         If you have a Kokoa Account, log in with your email or phone number.
       </p>
@@ -48,20 +48,26 @@
       - POST는 백엔드 서버에 정보를 전송하는 방식이라 이번 강의에서는 사용할 수 없다.
       - GET 방식은 보안에 취약하다. username이랑 password를 GET 방식으로 보내선 안된다.
         URL에 포함되어도    상관없는 정보들을 GET 방식으로 보내는 것이다. -->
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="#">Find Kokoa Account or Password</a>
+      <input
+        name="username"
+        type="email"
+        placeholder="Email or phone number"
+        required
+      />
+      <input name="password" type="password" placeholder="Password" required />
+      <input type="submit" minlength="7" value="Log In" required />
+      <a href="#">Find ririsi Account or Password</a>
     </form>
 
     <div id="no-mobile">
-      <span>Your screen is too big</span>
+      <span>Your screen is too big 👀</span>
     </div>
 
     <script
       src="https://kit.fontawesome.com/222ab3ff8d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./jsclock.js"></script>
     <!-- *script태그는 항상 body태그 닫기 전에 마지막에 위치해있어야 한다 -->
   </body>
 </html>
