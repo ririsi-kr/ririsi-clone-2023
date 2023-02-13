@@ -4,6 +4,7 @@ const clock = document.querySelector("span#clockjs");
 // console.log("이거 뭐야", test);
 //todo 작동이 안될때는 다양한 디버깅을 하며 문제를 해결한다.
 //todo 1. html과 js가 연결이 잘 됐는지 console.log 2. 문법을 잘 맞게 작성했는지 등등
+
 //test.innerText = "!!!!";
 //clock.innerText = "???";
 console.log(123123);

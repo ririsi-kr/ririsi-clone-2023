@@ -22,7 +22,7 @@
 @import "screens/chat.css";
 /* - styles.css 파일에는 font-family와 같이 모든 스크린에 적용될 수 있는 스타일을 써놓는다.( or 모든 스크린의 background-color) 이는 하나의 방식이고, 자신만의 편한 방식을 택하면 된다. */
 body {
-  color: #2e363e;
+  color: #faf8ee;
   font-family: "Open Sans", sans-serif;
 }
 /* 모든 font를 선택해서 추가하지 말것!

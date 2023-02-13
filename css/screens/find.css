@@ -48,7 +48,7 @@
 
 .open-post__hashtags {
   text-transform: uppercase;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .open-post__members {
@@ -66,7 +66,7 @@
 }
 
 .open-post__member-count {
-  opacity: 0.5;
+  opacity: 0.7;
   font-size: 14px;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .open-post__member-status {
-  color: palevioletred;
+  color: rgb(248, 238, 242);
 }
 .open-post__photo {
   position: relative;
@@ -95,7 +95,7 @@
 }
 
 .open-post__heart-count {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 5px;
   border-radius: 18px;

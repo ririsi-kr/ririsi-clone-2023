@@ -14,10 +14,11 @@ body {
   text-align: center;
   display: block;
   background-color: #faf8ee;
-  padding: 15px 0px;
-  font-size: 18px;
+  padding: 14px 0px;
+  font-size: 16px;
   margin-bottom: 25px;
   margin-top: -10px;
+  color: #ff7770;
 }
 
 #friends-display-link i {
